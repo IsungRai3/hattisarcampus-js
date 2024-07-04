@@ -112,3 +112,4 @@ function rai(isu){
     console.log(isu.code[0].ipAddress)
 }
 rai(isu)
+
