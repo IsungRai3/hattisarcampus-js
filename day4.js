@@ -193,3 +193,57 @@ console.log(zz)
 // })
 // console.log(haha)
 
+// const numm = [1,2,3,4,5]
+// const sum = numm.reduce((accumulator,num)=>{
+//     return num+accumulator
+// },2)
+// console.log(sum)
+
+
+
+const products = [
+    {
+        product : 'A',
+        price : 200,
+        qty : 2
+    },
+    {
+        product : 'B',
+        price : 300,
+        qty : 7
+    },
+    {
+        product : 'A',
+        price : 1100,
+        qty : 8
+    }
+]
+
+const output = products.reduce((acc,y)=>{
+    acc.totalQty = y.qty + acc.totalQty
+    acc.total = y.price*y.qty + acc.total
+    return acc
+},{total : 0,totalQty : 0})
+console.log(output)
+
+
+const reviews = [
+    {
+        rating : 2
+    },
+    {
+        rating : 4
+    },
+    {
+        rating : 5
+    },
+]
+
+function calculateRating(reviews){
+    const totalRating = reviews.reduce((acc,reviews)=>{
+        return reviews.rating + acc
+    },0)
+    const averageRaing = totalRating/reviews.length
+    console.log(averageRaing)
+}
+calculateRating(reviews)
