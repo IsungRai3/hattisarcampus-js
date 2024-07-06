@@ -6,5 +6,5 @@ console.log("hello")
 // h3.textContent = 'bye'
 
 
-const test = document.getElementsByTagName("hi")
+const test = document.getElementById("hi")
 test.textContent = "Heloo world"
