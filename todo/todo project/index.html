@@ -7,25 +7,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Js Project Workshop</h1>
-    <div>
+    <div> <h2>Js Project Workshop</h2>
         <input type="text" name="todoInput" id="todoInput" placeholder="Enter Todo">
-        <button type="submit">Add</button>
+        <button type="submit" onclick="addTask()">Add</button>
     </div>
 
-      <div>
+    <div>
         <label for="searchInput">Search:</label>
         <input type="text" name="searchInput" oninput="filterTasks()" id="searchInput">
     </div>
 
-    <ul id="todoList">
-        <li>Take bath</li>
-    </ul>
+    <ul id="todoList"></ul>
 
     <div>
         <p>Total Tasks : <span id="totalTasks">0</span></p>
-        <p>Completed Tasks : <span id="completedTasks">0</span></p>
+        <p>Completed Tasks : <span id="CompletedTasks">0</span></p>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
