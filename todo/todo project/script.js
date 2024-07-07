@@ -8,7 +8,7 @@ function addTask(){
         // add Task 
         tasks.push({
             text : taskValue,
-            completed : false,
+            completed : false
         })
         taskInput.value = ""
         updateTodoList()
